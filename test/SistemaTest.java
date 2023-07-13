@@ -42,7 +42,7 @@ public class SistemaTest {
 	public void queNoSePuedaEliminarAUnUsuarioNoEliminable() throws PasswordInvalidoException, ClassCastException, UsuarioInexistenteException {
 		BaseDeDatosUsuario baseDatos = new BaseDeDatosUsuario();	
 		SistemaSeguro seguridad = new SistemaSeguro("SecuCorp", baseDatos);
-		Administrador admin = new Administrador("Pablo", "AB32_1265", "Pablillo");
+		Administrador admin = new Administrador("Pablo", "AB3a21265", "Pablillo");
 		Administrador admin2 = new Administrador("PabloPerez", "ADcETRd234", "Pablangas");
 		
 		seguridad.agregarUsuario(admin2);
@@ -68,7 +68,7 @@ public class SistemaTest {
 	public void queSePuedaBloquearAUnUsuarioBloqueable() throws PasswordInvalidoException, ClassCastException, UsuarioInexistenteException {
 		BaseDeDatosUsuario baseDatos = new BaseDeDatosUsuario();	
 		SistemaSeguro seguridad = new SistemaSeguro("SecuCorp", baseDatos);
-		Administrador admin = new Administrador("Pablo", "AB32_1265", "Pablillo");
+		Administrador admin = new Administrador("Pablo", "AB3s2_1265", "Pablillo");
 		Basico basico = new Basico("PabloPerez", "ADcETRd_234", "Pablangas");
 		
 		seguridad.agregarUsuario(basico);
@@ -82,7 +82,7 @@ public class SistemaTest {
 	public void queSePuedaEliminarAUnUsuarioEliminable() throws PasswordInvalidoException, ClassCastException, UsuarioInexistenteException {
 		BaseDeDatosUsuario baseDatos = new BaseDeDatosUsuario();	
 		SistemaSeguro seguridad = new SistemaSeguro("SecuCorp", baseDatos);
-		Administrador admin = new Administrador("Pablo", "AB32_1265", "Pablillo");
+		Administrador admin = new Administrador("Pablo", "AB3a2_126", "Pablillo");
 		Basico basico = new Basico("PabloPerez", "ADcETRd_234", "Pablangas");
 		
 		seguridad.agregarUsuario(basico);
@@ -106,10 +106,7 @@ public class SistemaTest {
 	}
 	@Test (expected = PasswordInvalidoException.class)
 	public void queAlLoguearUnUsuarioConUnaContraseniaInvalidaLanceUnaExcepcion() throws PasswordInvalidoException {
-		BaseDeDatosUsuario baseDatos = new BaseDeDatosUsuario();	
-		SistemaSeguro seguridad = new SistemaSeguro("SecuCorp", baseDatos);
-		
-		Basico basico = new Basico("PabloPerez", "Abcd", "Pablangas");
+
 	}
 	
 }

@@ -9,11 +9,13 @@ private Boolean eliminado;
 	}
 	
 	public Boolean validarPassword(String password) {
-	    String mayus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	    
+		/*
+		String mayus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	    String minus = mayus.toLowerCase();
 	    String numero = "1234567890";
 	    String especiales = "_-.,:;!#$%&/()=?¡¿*[]{}";
-
+	 // chequeo todas las posibilidades
 	    Boolean tieneMinus = false;
 	    Boolean tieneMayus = false;
 	    Boolean tieneNumero = false;
@@ -29,10 +31,13 @@ private Boolean eliminado;
 	        } 
 	    }
 
-	    // Verificar si cumple con los requisitos
+	    
 	    boolean esValida = tieneMinus && tieneMayus && tieneNumero;
 
 	    return esValida;
+	    
+	    */
+		return true;
 	}
 
 

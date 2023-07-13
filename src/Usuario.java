@@ -13,8 +13,10 @@ public Usuario(String nombre, String password, String usuario) throws PasswordIn
 	
 	if(!validarPassword(password)) {
 		throw new PasswordInvalidoException("Este pass es invalido");
+	}else {
+		this.password = password;
 	}
-	this.password = password;
+
 	this.usuario = usuario;
 }
 
