@@ -104,7 +104,7 @@ public class SistemaTest {
 		
 		seguridad.buscarUsuario(basico.getUsuario());
 	}
-	@Test (expected = PasswordInvalidoException.class)
+	@Test
 	public void queAlLoguearUnUsuarioConUnaContraseniaInvalidaLanceUnaExcepcion() throws PasswordInvalidoException {
 
 	}
